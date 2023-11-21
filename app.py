@@ -15,7 +15,7 @@ import pandas as pd
 app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
-def predict(current_user):
+def predict():
 
     data = request.get_json()
 
